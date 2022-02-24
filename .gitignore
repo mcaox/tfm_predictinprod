@@ -1,0 +1,5 @@
+**/.ipynb_checkpoints/
+/TaxiFareModel/params.py
+*.egg-info/
+*.env
+/model.joblib
