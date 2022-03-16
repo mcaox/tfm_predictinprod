@@ -100,6 +100,9 @@ docker_build:
 	@docker build -t eu.gcr.io/${PROJECT_ID}/${DOCKER_IMAGE_NAME} .
 	@rm temp.json
 
+docker_push:
+	@docker push eu.gcr.io/${PROJECT_ID}/${DOCKER_IMAGE_NAME}
+
 docker_deploy:
 	@gcloud run deploy \
          --image eu.gcr.io/${PROJECT_ID}/${DOCKER_IMAGE_NAME} \

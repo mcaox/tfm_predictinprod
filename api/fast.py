@@ -67,6 +67,5 @@ def predict(pickup_datetime,
                          )
     model = joblib.load("model.joblib")
     y_pred = model.predict(X_pred)
-    datetime.strptime()
     return {"fare":y_pred[0]}
 
